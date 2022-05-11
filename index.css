@@ -25,8 +25,9 @@ h2 {
     border: 1px solid black;
     justify-content: space-evenly;
     display: flex;
-    min-height: 14vh;
+    height: 80px;
     width: 20vh;
+    padding-top: 55px;
 }
 
 /* style background of scoreboard - find an image(?) */
