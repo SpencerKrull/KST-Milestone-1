@@ -1,7 +1,11 @@
-/* choose font style for header 
+/* choose font style for header */
+h1 {
+    text-align: center;
+    border: 5px dotted black;
+}
 
-choose font style for categories
+/* choose font style for categories */
 
-format boxes - spaced evenly, borders, animations
+/* format boxes - spaced evenly, borders, animations */
 
-style background of scoreboard - find an image(?) */
+/* style background of scoreboard - find an image(?) */
