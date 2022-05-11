@@ -2,10 +2,31 @@
 h1 {
     text-align: center;
     border: 5px dotted black;
+    padding: 20px;
 }
 
 /* choose font style for categories */
 
 /* format boxes - spaced evenly, borders, animations */
+.scoreboard {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+h2 {
+    border: 1px solid black;
+    justify-content: space-evenly;
+    display: flex;
+    min-height: 10vh;
+    width: 20vh;
+}
+
+.a, .b, .c, .d, .e {
+    border: 1px solid black;
+    justify-content: space-evenly;
+    display: flex;
+    min-height: 14vh;
+    width: 20vh;
+}
 
 /* style background of scoreboard - find an image(?) */
