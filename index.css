@@ -3,6 +3,13 @@ h1 {
     text-align: center;
     border: 5px dotted black;
     padding: 20px;
+    font-family: Copperplate Gothic Light;
+}
+
+.player-1, .player-2 {
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 25px;
 }
 
 /* choose font style for categories */
@@ -18,14 +25,15 @@ h2 {
     justify-content: space-evenly;
     display: flex;
     min-height: 3vh;
-    width: 20vh;
+    width: 21vh;
+    font-family: Lucida Handwriting;
 }
 
 .a, .b, .c, .d, .e {
     border: 1px solid black;
     justify-content: space-evenly;
     display: flex;
-    height: 80px;
+    height: 70px;
     width: 20vh;
     padding-top: 55px;
 }
