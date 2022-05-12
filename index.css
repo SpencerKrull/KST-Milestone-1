@@ -4,12 +4,17 @@ h1 {
     border: 5px dotted black;
     padding: 20px;
     font-family: Copperplate Gothic Light;
+    background-color: yellow;
 }
 
 .player-1, .player-2 {
     font-weight: bold;
     font-size: 20px;
     margin-top: 25px;
+    border: 1px solid black;
+    padding: 1em;
+    height: 720px;
+    background-color: gold;
 }
 
 /* choose font style for categories */
@@ -27,6 +32,7 @@ h2 {
     min-height: 3vh;
     width: 21vh;
     font-family: Lucida Handwriting;
+    background-color: tomato;
 }
 
 .a, .b, .c, .d, .e {
@@ -36,6 +42,7 @@ h2 {
     height: 70px;
     width: 20vh;
     padding-top: 55px;
+    background-color: cornflowerblue;
 }
 
 /* style background of scoreboard - find an image(?) */
