@@ -42,7 +42,12 @@ h2 {
     height: 70px;
     width: 20vh;
     padding-top: 55px;
-    background-color: cornflowerblue;
+    background-color: skyblue;
 }
+
+/* Used code from codegrepper; this functionality proved easier than an eventListener, as the code is cleaner and allows for the same function */
+.a:hover, .b:hover, .c:hover, .d:hover, .e:hover {
+    background: linear-gradient(grey, grey);
+  }
 
 /* style background of scoreboard - find an image(?) */
