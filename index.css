@@ -5,6 +5,8 @@ h1 {
     padding: 20px;
     font-family: Copperplate Gothic Light;
     background-color: yellow;
+    margin-left: 60px;
+    margin-right: 60px;
 }
 
 .player-1, .player-2 {
@@ -17,9 +19,7 @@ h1 {
     background-color: gold;
 }
 
-/* choose font style for categories */
-
-/* format boxes - spaced evenly, borders, animations */
+/* format boxes - animations */
 .scoreboard {
     display: flex;
     justify-content: space-evenly;
@@ -51,3 +51,7 @@ h2 {
   }
 
 /* style background of scoreboard - find an image(?) */
+
+body {
+    background-color: green;
+}
