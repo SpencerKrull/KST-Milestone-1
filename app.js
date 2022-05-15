@@ -7,17 +7,12 @@ let playAgain = true
 
 // add buttons for multiple choice questions in each box, random for each, maybe 20-30 questions per main categories (not random)
 
-// https://stackoverflow.com/questions/6274339/how-can-i-shuffle-an-array; used to randomize the questions on the grid. For loops iterates through the randomized questions, while math.floor rounds the integers down in the array so that math.random can assign the number in the array to the questions.
-function random(a) {
-    var j, x, i;
-    for (i = a.length; i > 0; i--) {
-        j = Math.floor(Math.random() * (i + 1));
-        x = a[i];
-        a[i] = a[j];
-        a[j] = x;
-    }
-    return a;
-}
+let element = document.querySelectorAll(".music .a")
+element.forEach(el => {
+    el.addEventListener('click', () => {
+        console.log("hi")
+    })
+});
 
 
 

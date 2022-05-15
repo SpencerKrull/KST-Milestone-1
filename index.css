@@ -48,6 +48,8 @@ h2 {
 /* Used code from codegrepper; this functionality proved easier than an eventListener, as the code is cleaner and allows for the same function */
 .a:hover, .b:hover, .c:hover, .d:hover, .e:hover {
     background: linear-gradient(grey, grey);
+    filter: none;
+    transform: scale(1.10) rotate(720deg);
   }
 
 /* style background of scoreboard - find an image(?) */
