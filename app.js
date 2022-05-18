@@ -12,7 +12,7 @@ function displayQuestion() {
     let element = document.querySelectorAll("#music")
     element.forEach(el => {
             var modal = document.getElementById("modal")
-            document.getElementById('modal-question').innerText = "placeholder text" // this will be replaced by question from bank
+            document.getElementById('modal-question').innerText = "" // this will be replaced by question from bank
             el.onclick = function(){
                 modal.style.visibility = "visible";
             }
