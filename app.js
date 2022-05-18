@@ -4,16 +4,27 @@
 let score1 = 0
 let score2 = 0
 let playAgain = true
+document.getElementById("modal").style.visibility = "hidden"; // default visibility = false
 
 // add buttons for multiple choice questions in each box, random for each, maybe 20-30 questions per main categories (not random)
 
-let element = document.querySelectorAll(".music .a")
-element.forEach(el => {
-    el.addEventListener('click', () => {
-        console.log("hi")
+function displayQuestion() {
+    let element = document.querySelectorAll("#music")
+    element.forEach(el => {
+            var modal = document.getElementById("modal")
+            document.getElementById('modal-question').innerText = "placeholder text" // this will be replaced by question from bank
+            el.onclick = function(){
+                modal.style.visibility = "visible";
+            }
+        
+            window.onclick = function(event) {
+                if (event.target == modal) {
+                    modal.style.display = "";
+                }
+            }
     })
-});
-
+}
+displayQuestion();
 
 
 // for correct answers, add marker to space; incorrect, allow player to steal; return to regular space if both wrong

@@ -22,7 +22,16 @@ h1 {
 /* format boxes - animations */
 .scoreboard {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    align-self: center;
+}
+
+.all {
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    height: 100%;
 }
 
 h2 {
@@ -40,7 +49,7 @@ h2 {
     justify-content: space-evenly;
     display: flex;
     height: 70px;
-    width: 20vh;
+    width: 21vh;
     padding-top: 55px;
     background-color: skyblue;
 }
