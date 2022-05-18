@@ -16,12 +16,7 @@ function displayQuestion() {
             el.onclick = function(){
                 modal.style.visibility = "visible";
             }
-        
-            window.onclick = function(event) {
-                if (event.target == modal) {
-                    modal.style.display = "";
-                }
-            }
+
     })
 }
 displayQuestion();
