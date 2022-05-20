@@ -8,22 +8,20 @@ document.getElementById("modal").style.visibility = "hidden"; // default visibil
 
 // add buttons for multiple choice questions in each box, random for each, maybe 20-30 questions per main categories (not random)
 
-function displayQuestion() {
+function displayMusicQuestion() {
     let element = document.querySelectorAll("#music")
-    element.forEach(el => {
+    let mus = document.querySelectorAll(".mus")
+    console.log(mus)
+    console.log(element)
+    mus.forEach((el, idx) => {
+        console.log(el, idx)
             var modal = document.getElementById("modal")
-            document.getElementById('modal-question').innerText = "" // this will be replaced by question from bank
+
             el.onclick = function(){
                 modal.style.visibility = "visible";
+                document.getElementById('modal-question').innerText = `${musicQuestions[idx].text}`
             }
-
+                  
     })
 }
-displayQuestion();
-
-
-// for correct answers, add marker to space; incorrect, allow player to steal; return to regular space if both wrong
-
-// xxx player wins
-
-// scorecard for whoever has most squares
+displayMusicQuestion();
