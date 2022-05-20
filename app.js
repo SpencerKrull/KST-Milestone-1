@@ -35,17 +35,9 @@ function displayMusicQuestion() {
                 q3.innerText = `${musicQuestions[idx].C}`
                 console.log(q3)
 
-                q4.innerText = `${musicQuestions[idx].B}`
+                q4.innerText = `${musicQuestions[idx].D}`
                 console.log(q4)
-
-                // document.getElementById("b").innerHTML = `${musicQuestions[idx].B}`
-
-                
-
-                // document.getElementById("c").innerHTML = `${musicQuestions[idx].C}`
-                // document.getElementById("d").innerHTML = `${musicQuestions[idx].D}`
             }
-    
     })
 }
 displayMusicQuestion();
