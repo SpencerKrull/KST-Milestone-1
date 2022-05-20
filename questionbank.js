@@ -1,20 +1,20 @@
 let musicQuestions = [
     {
-        text: `What 80s song became a longstanding meme due to its use as a prank?
+        text: `What 80s song became a longstanding meme due to its use as a prank?`,
 
-        A. “Just Like Heaven” - The Cure
-        B. “Material Girl” - Madonna
-        C. “Purple Rain” - Prince
-        D. "Never Gonna Give You Up” - Rick Astley`,
+        A: '“Just Like Heaven” - The Cure',
+        B: '“Material Girl” - Madonna',
+        C: '“Purple Rain” - Prince',
+        D: '"Never Gonna Give You Up” - Rick Astley',
         correctAnswer: "D"
     },
     {
-        text: `What song went from being considered “one of the worst ever written” to “one of the most covered songs in music history?”
+        text: `What song went from being considered “one of the worst ever written” to “one of the most covered songs in music history?”`,
 
-        A. “What a Wonderful World” by Louis Armstrong
-        B. “Hallelujah” by Leonard Cohen
-        C. “Somewhere Over the Rainbow” by Judy Garland
-        D. “Imagine” by John Lennon`,
+        A: '“What a Wonderful World” by Louis Armstrong',
+        B: '“Hallelujah” by Leonard Cohen',
+        C: '“Somewhere Over the Rainbow” by Judy Garland',
+        D: '“Imagine” by John Lennon`',
         correctAnswer: "B"
     },
     {
