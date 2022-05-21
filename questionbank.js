@@ -6,7 +6,7 @@ let musicQuestions = [
         B: '“Material Girl” - Madonna',
         C: '“Purple Rain” - Prince',
         D: '"Never Gonna Give You Up” - Rick Astley',
-        correctAnswer: "D"
+        correctAnswer: "D",
     },
     {
         text: `What song went from being considered “one of the worst ever written” to “one of the most covered songs in music history?”`,
