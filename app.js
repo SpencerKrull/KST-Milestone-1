@@ -172,6 +172,12 @@ function displayWebQuestion() {
 }
 displayWebQuestion();
 
+const h3 = document.getElementById('h3');
+
+h3.addEventListener('click', function handleClick(event) {
+  h3.remove('h3');
+});
+
 // while (playAgain === true) {
 //     playGame()
 //     let userChoice = window.prompt('Would you like to play again?')
