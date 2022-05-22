@@ -21,17 +21,30 @@ function displayMusicQuestion() {
                 document.getElementById('modal-question').innerText = `${musicQuestions[idx].text}`
 
                 q1.innerText = `${musicQuestions[idx].A}`
-                console.log(q1)
 
                 q2.innerText = `${musicQuestions[idx].B}`
-                console.log(q2)
 
                 q3.innerText = `${musicQuestions[idx].C}`
-                console.log(q3)
 
                 q4.innerText = `${musicQuestions[idx].D}`
-                console.log(q4)
+                
+                let r1 = document.getElementById("a")
+                let r2 = document.getElementById("b")
+                let r3 = document.getElementById("c")
+                let r4 = document.getElementById("d")
+                let rArray = [r1, r2, r3, r4]
+                console.log(r4)
+
+                rArray.forEach((question) => {
+                    question.onclick = function() { 
+                if (question.checked && question.value === musicQuestions[idx].correctAnswer) {
+                    alert("Correct!!!") // more lines here for correct answer?
+                } else if (question.checked && question.value !== musicQuestions[idx].correctAnswer) {
+                    alert("Incorrect...")
+                }
             }
+            })
+        }
     })
 }
 displayMusicQuestion();
@@ -65,7 +78,24 @@ function displayMovieQuestion() {
 
                 q4.innerText = `${movieQuestions[idx].D}`
                 console.log(q4)
+
+                let r1 = document.getElementById("a")
+                let r2 = document.getElementById("b")
+                let r3 = document.getElementById("c")
+                let r4 = document.getElementById("d")
+                let rArray = [r1, r2, r3, r4]
+                console.log(r4)
+
+                rArray.forEach((question) => {
+                    question.onclick = function() { 
+                if (question.checked && question.value === movieQuestions[idx].correctAnswer) {
+                    alert("Correct!!!") // more lines here for correct answer?
+                } else if (question.checked && question.value !== movieQuestions[idx].correctAnswer) {
+                    alert("Incorrect...")
+                }
             }
+            })
+        }
     })
 }
 displayMovieQuestion();
@@ -99,7 +129,24 @@ function displayTvQuestion() {
 
                 q4.innerText = `${tvQuestions[idx].D}`
                 console.log(q4)
+
+                let r1 = document.getElementById("a")
+                let r2 = document.getElementById("b")
+                let r3 = document.getElementById("c")
+                let r4 = document.getElementById("d")
+                let rArray = [r1, r2, r3, r4]
+                console.log(r4)
+
+                rArray.forEach((question) => {
+                    question.onclick = function() { 
+                if (question.checked && question.value === tvQuestions[idx].correctAnswer) {
+                    alert("Correct!!!") // more lines here for correct answer?
+                } else if (question.checked && question.value !== tvQuestions[idx].correctAnswer) {
+                    alert("Incorrect...")
+                }
             }
+            })
+        }
     })
 }
 displayTvQuestion();
@@ -133,7 +180,24 @@ function displayLitQuestion() {
 
                 q4.innerText = `${litQuestions[idx].D}`
                 console.log(q4)
+
+                let r1 = document.getElementById("a")
+                let r2 = document.getElementById("b")
+                let r3 = document.getElementById("c")
+                let r4 = document.getElementById("d")
+                let rArray = [r1, r2, r3, r4]
+                console.log(r4)
+
+                rArray.forEach((question) => {
+                    question.onclick = function() { 
+                if (question.checked && question.value === litQuestions[idx].correctAnswer) {
+                    alert("Correct!!!") // more lines here for correct answer?
+                } else if (question.checked && question.value !== litQuestions[idx].correctAnswer) {
+                    alert("Incorrect...")
+                }
             }
+            })
+        }
     })
 }
 displayLitQuestion();
@@ -167,15 +231,32 @@ function displayWebQuestion() {
 
                 q4.innerText = `${webQuestions[idx].D}`
                 console.log(q4)
+
+                let r1 = document.getElementById("a")
+                let r2 = document.getElementById("b")
+                let r3 = document.getElementById("c")
+                let r4 = document.getElementById("d")
+                let rArray = [r1, r2, r3, r4]
+                console.log(r4)
+
+                rArray.forEach((question) => {
+                    question.onclick = function() { 
+                if (question.checked && question.value === webQuestions[idx].correctAnswer) {
+                    alert("Correct!!!") // more lines here for correct answer?
+                } else if (question.checked && question.value !== webQuestions[idx].correctAnswer) {
+                    alert("Incorrect...")
+                }
             }
+            })
+        }
     })
 }
 displayWebQuestion();
 
-const h3 = document.getElementById('h3');
+var questionBox = document.getElementById('h3');
 
-h3.addEventListener('click', function handleClick(event) {
-  h3.remove('h3');
+questionBox.addEventListener('click', function handleClick(event) {
+  questionBox.remove();
 });
 
 // while (playAgain === true) {
