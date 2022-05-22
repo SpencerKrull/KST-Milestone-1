@@ -10,54 +10,54 @@
 </head>
 <body>
     
-<h1>PLAIN OL' TRIVIA!!!</h1>
+<h1>POORLY CODED TRIVIA GAME!!!</h1>
 
 <div class="all">
 <div class="scoreboard">
 
     <div id="music">
         <h2>MUSIC</h2>
-        <h3 id="h3" class="a mus"><i class="fa-solid fa-music"></i></h3>
-        <h3 id="h3" class="b mus"><i class="fa-solid fa-music"></i></h3>
-        <h3 id="h3" class="c mus"><i class="fa-solid fa-music"></i></h3>
-        <h3 id="h3" class="d mus"><i class="fa-solid fa-music"></i></h3>
-        <h3 id="h3" class="e mus"><i class="fa-solid fa-music"></i></h3>
+        <h3 class="a mus h3"><i class="fa-solid fa-music"></i></h3>
+        <h3 class="b mus h3"><i class="fa-solid fa-music"></i></h3>
+        <h3 class="c mus h3"><i class="fa-solid fa-music"></i></h3>
+        <h3 class="d mus h3"><i class="fa-solid fa-music"></i></h3>
+        <h3 class="e mus h3"><i class="fa-solid fa-music"></i></h3>
     </div>
 
     <div id="movies">
         <h2>MOVIES</h2>
-        <h3 id="h3" class="a mov"><i class="fa-solid fa-video"></i></h3>
-        <h3 id="h3" class="b mov"><i class="fa-solid fa-video"></i></h3>
-        <h3 id="h3" class="c mov"><i class="fa-solid fa-video"></i></h3>
-        <h3 id="h3" class="d mov"><i class="fa-solid fa-video"></i></h3>
-        <h3 id="h3" class="e mov"><i class="fa-solid fa-video"></i></h3>
+        <h3 id="h3" class="a mov h3"><i class="fa-solid fa-video"></i></h3>
+        <h3 id="h3" class="b mov h3"><i class="fa-solid fa-video"></i></h3>
+        <h3 id="h3" class="c mov h3"><i class="fa-solid fa-video"></i></h3>
+        <h3 id="h3" class="d mov h3"><i class="fa-solid fa-video"></i></h3>
+        <h3 id="h3" class="e mov h3"><i class="fa-solid fa-video"></i></h3>
     </div>
 
     <div id="television">
         <h2>TV</h2>
-        <h3 id="h3" class="a tv"><i class="fa-solid fa-tv"></i></h3>
-        <h3 id="h3" class="b tv"><i class="fa-solid fa-tv"></i></h3>
-        <h3 id="h3" class="c tv"><i class="fa-solid fa-tv"></i></h3>
-        <h3 id="h3" class="d tv"><i class="fa-solid fa-tv"></i></h3>
-        <h3 id="h3" class="e tv"><i class="fa-solid fa-tv"></i></h3>
+        <h3 id="h3" class="a tv h3"><i class="fa-solid fa-tv"></i></h3>
+        <h3 id="h3" class="b tv h3"><i class="fa-solid fa-tv"></i></h3>
+        <h3 id="h3" class="c tv h3"><i class="fa-solid fa-tv"></i></h3>
+        <h3 id="h3" class="d tv h3"><i class="fa-solid fa-tv"></i></h3>
+        <h3 id="h3" class="e tv h3"><i class="fa-solid fa-tv"></i></h3>
     </div>
 
     <div id="books">
         <h2>LITERATURE</h2>
-        <h3 id="h3" class="a lit"><i class="fa-solid fa-book"></i></h3>
-        <h3 id="h3" class="b lit"><i class="fa-solid fa-book"></i></h3>
-        <h3 id="h3" class="c lit"><i class="fa-solid fa-book"></i></h3>
-        <h3 id="h3" class="d lit"><i class="fa-solid fa-book"></i></h3>
-        <h3 id="h3" class="e lit"><i class="fa-solid fa-book"></i></h3>
+        <h3 id="h3" class="a lit h3"><i class="fa-solid fa-book"></i></h3>
+        <h3 id="h3" class="b lit h3"><i class="fa-solid fa-book"></i></h3>
+        <h3 id="h3" class="c lit h3"><i class="fa-solid fa-book"></i></h3>
+        <h3 id="h3" class="d lit h3"><i class="fa-solid fa-book"></i></h3>
+        <h3 id="h3" class="e lit h3"><i class="fa-solid fa-book"></i></h3>
     </div>
 
     <div id="internet">
         <h2>INTERNET</h2>
-        <h3 id="h3" class="a web"><i class="fa-solid fa-wifi"></i></h3>
-        <h3 id="h3" class="b web"><i class="fa-solid fa-wifi"></i></h3>
-        <h3 id="h3" class="c web"><i class="fa-solid fa-wifi"></i></h3>
-        <h3 id="h3" class="d web"><i class="fa-solid fa-wifi"></i></h3>
-        <h3 id="h3" class="e web"><i class="fa-solid fa-wifi"></i></h3>
+        <h3 id="h3" class="a web h3"><i class="fa-solid fa-wifi"></i></h3>
+        <h3 id="h3" class="b web h3"><i class="fa-solid fa-wifi"></i></h3>
+        <h3 id="h3" class="c web h3"><i class="fa-solid fa-wifi"></i></h3>
+        <h3 id="h3" class="d web h3"><i class="fa-solid fa-wifi"></i></h3>
+        <h3 id="h3" class="e web h3"><i class="fa-solid fa-wifi"></i></h3>
     </div>
 </div>
 </div>
@@ -77,22 +77,11 @@
 
             <input type="radio" name="answer" id="d" class="answer" value="D">
             <label for="d" id="d_text"></label>
-
         </div>
+
+        <div><p id="result"></p></div>
     </div>
 </div>
-
-<!-- <div class="answer-card">
-    <h3 class="question"> </h3>
-        <form autocomplete="off">
-            <input name="user-answer" type="text" />
-            <button type="submit">Submit</button>
-        <div class="answer">
-            <p class="correct">Correct!</p>
-            <p class="incorrect">Incorrect :( Next player can steal</p>
-        </div>
-</div> -->
-
 
 <script src="app.js"></script>
 </body>

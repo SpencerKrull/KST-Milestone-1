@@ -1,16 +1,17 @@
 let playerScore = 0
 let playAgain = true
-document.getElementById("modal").style.visibility = "hidden"; // default visibility = false
+var modal = document.getElementById('modal');
+let result = document.getElementById('result');
+let currentQuestion = null;
+let answered = false;
+modal.style.visibility = "hidden"; // default visibility = false
+
 
 function displayMusicQuestion() {
     let element = document.querySelectorAll("#music")
     let mus = document.querySelectorAll(".mus")
-    console.log(mus)
-    console.log(element)
 
     mus.forEach((el, idx) => {
-        console.log(el, idx)
-            var modal = document.getElementById("modal")
 
             el.onclick = function(){
                 let q1 = document.getElementById("a_text")
@@ -18,6 +19,7 @@ function displayMusicQuestion() {
                 let q3 = document.getElementById("c_text")
                 let q4 = document.getElementById("d_text")
                 modal.style.visibility = "visible";
+                console.log(musicQuestions, 'line 18')
                 document.getElementById('modal-question').innerText = `${musicQuestions[idx].text}`
 
                 q1.innerText = `${musicQuestions[idx].A}`
@@ -33,15 +35,15 @@ function displayMusicQuestion() {
                 let r3 = document.getElementById("c")
                 let r4 = document.getElementById("d")
                 let rArray = [r1, r2, r3, r4]
-                console.log(r4)
 
                 rArray.forEach((question) => {
-                    question.onclick = function() { 
-                if (question.checked && question.value === musicQuestions[idx].correctAnswer) {
-                    alert("Correct!!!") // more lines here for correct answer?
-                } else if (question.checked && question.value !== musicQuestions[idx].correctAnswer) {
-                    alert("Incorrect...")
-                }
+                    question.onclick = function() {
+                        currentQuestion = question; 
+                if (question.value === musicQuestions[idx].correctAnswer) {
+                    result.innerText = "Correct!!!" // more lines here for correct answer?
+                } else if (question.value !== musicQuestions[idx].correctAnswer) {
+                    result.innerText = "Incorrect..."
+                }              
             }
             })
         }
@@ -52,12 +54,9 @@ displayMusicQuestion();
 function displayMovieQuestion() {
     let element = document.querySelectorAll("#movies")
     let mov = document.querySelectorAll(".mov")
-    console.log(mov)
-    console.log(element)
 
     mov.forEach((el, idx) => {
         console.log(el, idx)
-            var modal = document.getElementById("modal")
 
             el.onclick = function(){
                 let q1 = document.getElementById("a_text")
@@ -87,12 +86,13 @@ function displayMovieQuestion() {
                 console.log(r4)
 
                 rArray.forEach((question) => {
-                    question.onclick = function() { 
-                if (question.checked && question.value === movieQuestions[idx].correctAnswer) {
-                    alert("Correct!!!") // more lines here for correct answer?
-                } else if (question.checked && question.value !== movieQuestions[idx].correctAnswer) {
-                    alert("Incorrect...")
-                }
+                    question.onclick = function() {
+                        currentQuestion = question; 
+                if (question.value === movieQuestions[idx].correctAnswer) {
+                    result.innerText = "Correct!!!" // more lines here for correct answer?
+                } else if (question.value !== movieQuestions[idx].correctAnswer) {
+                    result.innerText = "Incorrect..."
+                }  
             }
             })
         }
@@ -108,7 +108,6 @@ function displayTvQuestion() {
 
     tv.forEach((el, idx) => {
         console.log(el, idx)
-            var modal = document.getElementById("modal")
 
             el.onclick = function(){
                 let q1 = document.getElementById("a_text")
@@ -138,12 +137,13 @@ function displayTvQuestion() {
                 console.log(r4)
 
                 rArray.forEach((question) => {
-                    question.onclick = function() { 
-                if (question.checked && question.value === tvQuestions[idx].correctAnswer) {
-                    alert("Correct!!!") // more lines here for correct answer?
-                } else if (question.checked && question.value !== tvQuestions[idx].correctAnswer) {
-                    alert("Incorrect...")
-                }
+                    question.onclick = function() {
+                        currentQuestion = question; 
+                if (question.value === tvQuestions[idx].correctAnswer) {
+                    result.innerText = "Correct!!!" // more lines here for correct answer?
+                } else if (question.value !== tvQuestions[idx].correctAnswer) {
+                    result.innerText = "Incorrect..."
+                }  
             }
             })
         }
@@ -158,8 +158,6 @@ function displayLitQuestion() {
     console.log(element)
 
     lit.forEach((el, idx) => {
-        console.log(el, idx)
-            var modal = document.getElementById("modal")
 
             el.onclick = function(){
                 let q1 = document.getElementById("a_text")
@@ -189,12 +187,13 @@ function displayLitQuestion() {
                 console.log(r4)
 
                 rArray.forEach((question) => {
-                    question.onclick = function() { 
-                if (question.checked && question.value === litQuestions[idx].correctAnswer) {
-                    alert("Correct!!!") // more lines here for correct answer?
-                } else if (question.checked && question.value !== litQuestions[idx].correctAnswer) {
-                    alert("Incorrect...")
-                }
+                    question.onclick = function() {
+                        currentQuestion = question; 
+                if (question.value === litQuestions[idx].correctAnswer) {
+                    result.innerText = "Correct!!!" // more lines here for correct answer?
+                } else if (question.value !== litQuestions[idx].correctAnswer) {
+                    result.innerText = "Incorrect..."
+                }  
             }
             })
         }
@@ -210,7 +209,6 @@ function displayWebQuestion() {
 
     web.forEach((el, idx) => {
         console.log(el, idx)
-            var modal = document.getElementById("modal")
 
             el.onclick = function(){
                 let q1 = document.getElementById("a_text")
@@ -237,15 +235,15 @@ function displayWebQuestion() {
                 let r3 = document.getElementById("c")
                 let r4 = document.getElementById("d")
                 let rArray = [r1, r2, r3, r4]
-                console.log(r4)
 
                 rArray.forEach((question) => {
-                    question.onclick = function() { 
-                if (question.checked && question.value === webQuestions[idx].correctAnswer) {
-                    alert("Correct!!!") // more lines here for correct answer?
-                } else if (question.checked && question.value !== webQuestions[idx].correctAnswer) {
-                    alert("Incorrect...")
-                }
+                    question.onclick = function() {
+                        currentQuestion = question; 
+                if (question.value === webQuestions[idx].correctAnswer) {
+                    result.innerText = "Correct!!!" // more lines here for correct answer?
+                } else if (question.value !== webQuestions[idx].correctAnswer) {
+                    result.innerText = "Incorrect..."
+                }  
             }
             })
         }
@@ -253,11 +251,28 @@ function displayWebQuestion() {
 }
 displayWebQuestion();
 
-var questionBox = document.getElementById('h3');
-
-questionBox.addEventListener('click', function handleClick(event) {
-  questionBox.remove();
-});
+var questionBox = document.querySelectorAll('.h3');
+console.log(questionBox)
+questionBox.forEach(qb => {
+    qb.addEventListener('click', function handleClick(event) {
+        qb.remove();
+      });
+})
+modal.onclick = function() {
+        if(answered) {
+            result.innerText = "";
+            currentQuestion.checked = false;
+            answered = false;
+            modal.style.visibility = "hidden";
+        } else {
+            answered = true;
+        }
+}
+// function keepScore() {
+//     if(playerAnswer === question.correctAnswer){
+//        playerScore = playerScore + 1
+//         }
+// }
 
 // while (playAgain === true) {
 //     playGame()
